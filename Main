@@ -1,0 +1,40 @@
+public class Main {
+			
+	public static void main(String args[]) {
+				
+		BuyTicket ticket1=new BuyTicket ("");
+		ticket1.buy("есть");
+		BuyTicket ticket2=new BuyTicket ("");
+		ticket2.buy("нет");
+		
+		Time o_clock1= new Time (0);
+	    o_clock1.watchTime(09.00);
+	    Time o_clock2= new Time (0);
+	    o_clock2.watchTime(19.00);
+	    Time o_clock3= new Time (0);
+	    o_clock3.watchTime(17.00);
+	    
+	    	    
+	    Train number1=new Train (0);
+	    number1.search(5,5);
+	    Train number2=new Train (0);
+	    number2.search(5,9);
+		
+	    Ticket document1=new Ticket ("");
+	    document1.check("есть");
+	    Ticket document2=new Ticket ("");
+	    document2.check("нет");
+	    
+	    
+	   Meeting word=new Meeting ("");
+		word.sayWord2("");
+		word.sayWord1("");}
+				    
+		public void travell () {
+			if (ticket1.buy) {
+				System.out.println (o_clock2.watchTime(19.00), number1.search(5,5),document1.check("есть"),word.sayWord2(""));}
+				else if (o_clock1.watchTime(09.00)){
+				System.out.println (word.sayWord1(""));}
+				
+	
+}}
