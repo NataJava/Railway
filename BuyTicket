@@ -1,0 +1,12 @@
+public class BuyTicket {
+	String ticket;
+	
+	public BuyTicket (String ticket) {
+		this.ticket=ticket;}
+	
+		public String buy (String ticket) {
+			
+			ticket=(ticket=="есть")?"Поеду на поезде":"Останусь дома";
+							System.out.println(ticket);
+			return ticket;}
+}
