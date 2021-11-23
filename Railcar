@@ -1,0 +1,14 @@
+public class Railcar {
+
+    private int sum;
+
+    public Railcar (int sum){
+        this.sum=sum;
+    }
+    public int getSum(){
+        return sum; }
+
+    public void goToCar() {
+       System.out.println("Билет стоит "+ sum);
+        }
+    }
