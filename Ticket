@@ -1,0 +1,12 @@
+public class Ticket {
+    String document;
+
+    public Ticket (String document) {
+        this.document=document;}
+
+    public void check (String document) {
+
+        document=(document.equals("есть"))?"Проходите":"Не можем Вас пропустить";
+        System.out.println(document);
+        }
+}
