@@ -1,0 +1,16 @@
+public class Railcar5 extends Railcar{
+
+    public Railcar5 (int sum) {
+        super(sum);
+    }
+    @Override
+    public void goToCar(){
+        System.out.println("Билет стоит "+ getSum());
+        int maxsum=1599;
+        int minsum=1000;
+        if (getSum()>=minsum&getSum()<maxsum) {
+            System.out.println ("Я поеду в сидячем вагоне");}
+        else if (getSum()>maxsum) {System.out.println("Можно купить билет в вагоне стоимостью подороже");}
+        else if (getSum()<minsum) {System.out.println("Не хватает денег");}
+        }
+    }
