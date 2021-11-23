@@ -1,40 +1,37 @@
 public class Main {
-			
-	public static void main(String args[]) {
-				
-		BuyTicket ticket1=new BuyTicket ("");
-		ticket1.buy("есть");
-		BuyTicket ticket2=new BuyTicket ("");
-		ticket2.buy("нет");
-		
-		Time o_clock1= new Time (0);
-	    o_clock1.watchTime(09.00);
-	    Time o_clock2= new Time (0);
-	    o_clock2.watchTime(19.00);
-	    Time o_clock3= new Time (0);
-	    o_clock3.watchTime(17.00);
-	    
-	    	    
-	    Train number1=new Train (0);
-	    number1.search(5,5);
-	    Train number2=new Train (0);
-	    number2.search(5,9);
-		
-	    Ticket document1=new Ticket ("");
-	    document1.check("есть");
-	    Ticket document2=new Ticket ("");
-	    document2.check("нет");
-	    
-	    
-	   Meeting word=new Meeting ("");
-		word.sayWord2("");
-		word.sayWord1("");}
-				    
-		public void travell () {
-			if (ticket1.buy) {
-				System.out.println (o_clock2.watchTime(19.00), number1.search(5,5),document1.check("есть"),word.sayWord2(""));}
-				else if (o_clock1.watchTime(09.00)){
-				System.out.println (word.sayWord1(""));}
-				
-	
-}}
+
+    public static void main(String[] args) {
+
+        //Выберите "есть" или "нет" наличие билета
+        BuyTicket ticket = new BuyTicket ("");
+        ticket.buy("есть");
+
+        //Выбор класса вагона в зависимости от суммы
+        Railcar lux=new Railcar1(18000);
+        lux.goToCar();
+
+        Railcar2 SC=new Railcar2(8000);
+        SC.goToCar();
+
+        Railcar3 compartment=new Railcar3(3000);
+        compartment.goToCar();
+
+        Railcar4 RSCompartment=new Railcar4(2000);
+        RSCompartment.goToCar();
+
+        Railcar5 seating=new Railcar5(1000);
+        seating.goToCar();
+
+        //Прибытие/отправление поезда в зависимости от времени:09.00-прибытие, 19.00-отправление
+        Time o_clock= new Time (0);
+        o_clock.watchTime(09.00);
+
+        //Поиск своего вагона
+        Train number=new Train (0);
+        number.search(5,5);
+
+        //Проверка документов:"есть" или "нет"
+        Ticket document=new Ticket ("");
+        document.check("есть");
+
+    }}
