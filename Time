@@ -1,0 +1,16 @@
+public class Time {
+    double o_clock;
+
+    public Time (double o_clock) {
+        this.o_clock=o_clock;
+    }
+    public void watchTime (double o_clock) {
+        if (o_clock==9.00){
+            System.out.println("Поезд прибывает");}
+        else if(o_clock==19.00){
+            System.out.println("Поезд отправляется");}
+        else {
+            System.out.println("В "+o_clock+" ч. поезда ни прибывают и ни отправляются");}
+
+    }
+}
