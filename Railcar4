@@ -12,4 +12,10 @@ public class Railcar4 extends Railcar{
         else if (getSum()>maxsum) {System.out.println("Можно купить билет в вагоне стоимостью подороже");}
         else if (getSum()<minsum) {System.out.println("Не хватает денег");}
         }
+    @Override
+    public void thereIsInCar(String furniture){
+        furniture=(furniture.equals("4 лежачие полки"))?"В открытом купе есть 4 лежачие полки":"Здесь такого нет";
+        System.out.println(furniture);
     }
+    }
+
