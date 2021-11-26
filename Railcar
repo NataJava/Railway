@@ -1,4 +1,4 @@
-public class Railcar {
+public abstract class Railcar {
 
     private int sum;
 
@@ -8,7 +8,7 @@ public class Railcar {
     public int getSum(){
         return sum; }
 
-    public void goToCar() {
-       System.out.println("Билет стоит "+ sum);
-        }
+    public abstract void goToCar();
+
+    public abstract void thereIsInCar (String furniture);
     }
