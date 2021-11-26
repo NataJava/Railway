@@ -1,4 +1,5 @@
 public class Train {
+
     int number;
 
     public Train (int number) {
@@ -7,7 +8,8 @@ public class Train {
     public void search (int number, int carriage) {
         System.out.println ("Это какой номер вагона?  " + carriage);
 
-        if (carriage==number) {System.out.println ("Вы на месте");}
+        if (carriage==number) {
+            System.out.println ("Вы на месте");}
         else  {
             System.out.println("Идите дальше");}
     }
