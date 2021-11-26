@@ -10,7 +10,13 @@ public class Railcar2 extends Railcar {
       int minsum = 7000;
       if (getSum()>= minsum &getSum()< maxsum) {
          System.out.println ("Я поеду в спальном вагоне");}
-          else if (getSum()>maxsum) {System.out.println("Можно купить билет в люкс вагоне");}
+          else if (getSum()>maxsum)
+          {System.out.println("Можно купить билет в люкс вагоне");}
           else if (getSum()<minsum) {System.out.println("Не хватает денег");}
        }
+    @Override
+    public void thereIsInCar(String furniture){
+        furniture=(furniture.equals("2 лежачие полки"))?"В закрытом купе есть 2 лежачие полки":"Здесь такого нет";
+        System.out.println(furniture);
     }
+}
