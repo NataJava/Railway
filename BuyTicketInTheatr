@@ -1,0 +1,8 @@
+public class BuyTicketInTheatre implements Buy {
+
+    public void buy (String ticket) {
+        ticket=(ticket.equals("есть"))?"Пойду на балет":"Останусь дома";
+        System.out.println(ticket);
+
+    }
+}
