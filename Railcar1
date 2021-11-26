@@ -16,5 +16,9 @@ public class Railcar1 extends Railcar {
             System.out.println("Не хватает денег");
         }
     }
-
+    @Override
+    public void thereIsInCar(String furniture){
+        furniture=(furniture.equals("диван-кровать"))?"В закрытом купе есть удобный диван-кровать":"Здесь такого нет";
+        System.out.println(furniture);
+    }
 }
