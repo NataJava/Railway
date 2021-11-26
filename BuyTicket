@@ -1,12 +1,15 @@
-public class BuyTicket {
-	String ticket;
-	
-	public BuyTicket (String ticket) {
-		this.ticket=ticket;}
-	
-		public String buy (String ticket) {
-			
-			ticket=(ticket=="есть")?"Поеду на поезде":"Останусь дома";
-							System.out.println(ticket);
-			return ticket;}
+public class BuyTicket implements Travel {
+
+        String ticket;
+
+        public BuyTicket (String ticket) {
+            this.ticket=ticket;
+        }
+
+        public void buy (String ticket) {
+            ticket=(ticket.equals("есть"))?"Поеду на поезде":"Останусь дома";
+            System.out.println(ticket);
+        }
+
+
 }
