@@ -1,4 +1,5 @@
-public class Time {
+public class Time  {
+
     double o_clock;
 
     public Time (double o_clock) {
